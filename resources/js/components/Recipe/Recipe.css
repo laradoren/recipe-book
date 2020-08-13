@@ -1,0 +1,253 @@
+.recipeSection {
+    background-color: #FCDFA6;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.recipeContentTitle {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.recipeContentColumn {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.recipeContentOther {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.recipeContentLikes {
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    line-height: 1;
+}
+
+.likeImage {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.recipeSectionContentImage {
+    width: 300px;
+    margin-right: 50px;
+    height: auto;
+}
+
+.recipeContentIngredients {
+    width: 60%;
+}
+
+.recipeComments {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+.commentCard {
+    background-color: #fff;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;    
+    color: #F4B886;
+}
+
+.commentAuthor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+.commentUsername{
+    color: #F4B886;
+}
+
+.user {
+    width: 70px;
+}
+
+.commentText {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.addCommentText {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.addComment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.addCommentFormField {
+    border: none;
+    background-color: #FCDFA6;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+    .recipeSection {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .recipeContentTitle {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+        
+    .recipeContentOther {
+        margin-top: 10px;
+    }
+    
+    
+    .recipeComments {
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .recipeContentColumn {
+        display: flex;
+        margin-bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipeSectionContentImage {
+        margin-right: 0px;
+    }
+
+    .recipeContentIngredients {
+        width: 100%;
+        margin-top: 10px;
+    }
+        
+}
+
+@media (max-width: 400px) {
+    .recipeSection {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    
+    .recipeContentTitle {
+        font-size: 20px;
+    }
+
+    .recipeContentIngredients {
+        font-size: 12px;
+    }
+        
+    .recipeContentOther {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .recipeContentLikes {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+        
+    .recipeSectionContentImage {
+        width: 200px;
+    }
+        
+    .recipeComments {
+        font-size: 15px;
+    }
+
+    .commentAuthor {
+        font-size: 12px;
+    }
+
+    .recipeContentDescription {
+        font-size: 12px;
+    }
+
+    .commentText {
+        font-size: 15px;
+    }
+    
+}
+
+/*
+.recipeWindowContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipeLikes {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.recipeLikes:after {
+    background-color: #fff;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+}
+
+.recipeLikes:before {
+    background-color: #fff;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+}
+
+
+
+@keyframes beat {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(0.6) rotate(-45deg);
+    }
+}*/
+

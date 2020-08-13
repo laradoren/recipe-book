@@ -1,0 +1,204 @@
+
+.profileSection {
+    background-color: #FCDFA6;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.profileTitle {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profileContent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.profileUserPhoto {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 200px;
+}
+
+.profileInfoItem {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.space {
+    margin-top: 10px;
+}
+
+.profileFormChange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.profileRecipeContent {
+    width: 50%;
+}
+
+.profileRecipeCard {
+    background-color: #F4B886;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.profileRecipeHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profileRecipeCardImage {
+    width: 30px;
+}
+
+.profileCardTitle {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.profileRecipeCardContentTitle {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.profileCommentAuthor {
+    color:  #F4B886;
+}
+
+.profileCommentCard {
+    background-color: #fff;
+    color: #F4B886;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.alertWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F4B886;
+    height: 100px;
+    width: 330px;  
+    padding: 15px;
+}
+
+.alertTitle {
+    align-items: center;
+}
+
+.profileAlertButtons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) { 
+    .profileSection {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .profileTitle {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .profileContent {
+        flex-direction: column;
+    }
+    
+    .profileInfo {
+        width: 100%;
+    }
+    
+    .profileUserPhoto {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .profileInfoItem {
+        margin-top: 7px;
+        font-size: 15px;
+    }
+    
+    .space {
+        margin-top: 7px;
+    }
+    
+    .profileFormChange {
+        width: 100%;
+    }
+    
+    .profileRecipeContent {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+   
+    .profileRecipeCard {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .profileRecipeCardImage {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .profileTitle {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .profileUserPhoto {
+        width: 250px;
+        height: 250px;
+    }
+
+    .alertWindow {
+        height: 80px;
+        width: 240px;  
+        padding: 10px;
+    }
+    
+    .alertTitle {
+        font-size: 13px;
+    }
+
+    .profileRecipeCard {
+        font-size: 15px;
+    }
+
+    .profileCardTitle {
+        font-size: 16px;
+    }
+
+
+}

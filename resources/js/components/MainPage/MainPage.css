@@ -1,0 +1,135 @@
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:6px;
+    height:0px
+}
+    
+::-webkit-scrollbar-track {
+    background-color:#fff;
+    box-shadow:0px 0px 3px #000 inset;
+}
+    
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #F4B886;
+    box-shadow:0px 1px 1px #fff inset;
+    background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+    background-position:center;
+    background-repeat:no-repeat;
+}
+    
+::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:7px;
+    height:0px
+}
+    
+::-webkit-scrollbar{
+    width: 11px;
+}
+
+
+.mainPageSection {
+    background-color: #FCDFA6;
+    min-height: 63vh;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.mainPageTitle {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mainPageContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.recipeCard {
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    
+}
+
+.recipeCard:hover .recipeCardContent {
+    transform: rotateY(180deg);
+}
+
+.recipeCardContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.recipeContentImage, .recipeCardContentTitle {
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+.recipeImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.recipeCardContentTitle {
+    font-style: italic;
+    font-size: 36px;
+    color: #000;
+    text-transform: capitalize;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    background-color: #F4B886;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+  
+
+@media (max-width: 1100px) { 
+    .mainPageContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) { 
+    .mainPageContent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) { 
+
+    .mainPageTitle {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .recipeImage {
+        height: 300px;
+    }
+
+    .recipeCard {
+        height: 300px;
+    }
+
+    .mainPageContent {
+        grid-gap: 20px;
+    }
+
+}

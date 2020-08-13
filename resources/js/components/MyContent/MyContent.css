@@ -1,0 +1,282 @@
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.modalWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F4B886;
+    height: calc(90vh - 50px);
+    width: calc(90vw - 50px);  
+    padding: 25px;
+    overflow-y: scroll;
+}
+
+.recipeModalWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FCDFA6;
+    height: 330px;
+    width: 300px;  
+    padding: 25px;
+}
+
+.commentModalWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FCDFA6;
+    height: 190px;
+    width: 300px;  
+    padding: 25px;
+}
+
+.myContentSection {
+    background-color: #FCDFA6;
+    min-height: 63px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.myContentTitle {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.myContentContent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.myContentSubtitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+.myRecipeCard {
+    width: 100%;
+    height: 200px;
+    background-color: #F4B886;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.recipeModalTitle {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.myRecipeCardContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myRecipeContentImage {
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.myRecipeCardContentTitle{
+    font-style: italic;
+    font-size: 36px;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.myContentButtons {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+.commentButton {
+    min-height: 100px;
+    margin-right: 0px;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    color: #151616;
+}
+
+.editButton {
+    padding: 10px 20px;
+    background-color: #AAC0AA;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.deleteButton {
+    padding: 10px 20px;
+    background-color: #A18276;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.myCommentCard {
+    width: calc(100%-20px);
+    min-height: 60px;
+    background-color: #F4B886;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+.myCommentCardContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myCommentCardContentText {
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    width: 60%;
+}
+
+.myCommentCardContentDate {
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1000px) { 
+    .myRecipeCardContentTitle{
+        font-size: 30px;
+    }    
+
+}
+
+@media (max-width: 800px) { 
+    .myContentTitle {
+        font-size: 30px;       
+    }
+
+    .myContentSubtitle {
+        font-size: 24px;
+    }
+
+    .myRecipeCardContentTitle{
+        font-size: 20px;
+    }    
+
+    .myCommentCardContentText {
+        font-size: 18px;
+    }
+
+    .myCommentCardContentDate {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 600px) { 
+    .myContentSection {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .myContentTitle {
+        font-size: 20px;
+        margin-bottom: 20px;       
+    }
+    
+    .myContentContent {
+        grid-gap: 10px;
+    }    
+    
+    .myContentSubtitle {
+        font-size: 18px;
+    }
+    
+    .myRecipeCard {
+        height: 120px;
+    }
+        
+    .myRecipeContentImage {
+        display: none;
+    }
+    
+    .myRecipeCardContentTitle{
+        font-size: 12px;
+        width: 60%;
+    }
+    
+    .myContentButtons {
+        min-height: 120px;
+        margin-right: 10px;
+    }
+    
+    .commentButton {
+        min-height: 100px;
+        margin-right: 0px;
+        justify-content: space-around;
+    }
+    
+    button {
+        font-size: 12px;
+    }
+    
+    .editButton {
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+    
+    .deleteButton {
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+    
+    .myCommentCard {
+        width: calc(80%-20px);
+        min-height: 50px;
+        padding: 10px;
+    }
+    
+    .myCommentCardContentText {
+        font-size: 12px;
+    }
+    
+    .myCommentCardContentDate {
+        font-size: 10px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) { 
+    .recipeModalWindow {
+        width: 200px;  
+    }
+
+    .commentModalWindow {
+        width: 200px;  
+    }
+}

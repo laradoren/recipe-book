@@ -1,0 +1,38 @@
+.footerSection {
+    background-color: #F4B886;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.footerText {
+    font-size: 20px;
+}
+
+.footerContacts {
+    display: flex;
+    
+}
+
+.contact {
+    margin-left: 8px;
+}
+
+.contactImage {
+    width: 40px;
+}
+
+@media (max-width: 500px) {     
+    .footerText {
+        font-size: 15px;
+    }
+
+    .contactImage {
+        width: 30px;
+    }
+}
+
