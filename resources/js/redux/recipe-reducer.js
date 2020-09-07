@@ -23,7 +23,7 @@ export const recipeReducer = (state = initialState, action) => {
         case SET_RECIPES:
             return {...state, recipes: action.recipes};
         case CREATE_RECIPE:
-            action.recipe.image = 'http://127.0.0.1:8000/storage/' + action.recipe.image; 
+            action.recipe.image = 'https://127.0.0.1:8000/storage/' + action.recipe.image; 
             return {...state, recipes: [action.recipe, ...state.recipes ]};
         case SET_FIELDS: 
             return {...state, [action.name]: action.value };
