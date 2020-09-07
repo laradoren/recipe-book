@@ -29,7 +29,7 @@ export const profileReducer = (state = initialState, action) => {
             return {...state, [action.name] : action.value };
         case UPDATE_PROFILE:      
             if(action.profile.image != null) {
-                action.profile.image = 'http://127.0.0.1:8000/storage/' + action.profile.image;
+                action.profile.image = 'https://127.0.0.1:8000/storage/' + action.profile.image;
             }      
             return {...state, profile: action.profile }; 
         case SET_LOADING: 
